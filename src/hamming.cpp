@@ -5,9 +5,10 @@
 #include <sstream>
 #include <string>
 #include <sys/types.h>
-#include <emmintrin.h>
-#include <wmmintrin.h>
-#include <immintrin.h>
+// #include <emmintrin.h>
+// #include <wmmintrin.h>
+// #include <immintrin.h>
+#include "sse2neon.h"
 
 
 #define NUM_SUB_KEY 256

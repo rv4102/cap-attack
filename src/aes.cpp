@@ -1,6 +1,5 @@
 #include "../measure/measure.h"
 
-#include <emmintrin.h>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
@@ -10,12 +9,14 @@
 #include <string.h>
 #include <string>
 #include <time.h>
-#include <wmmintrin.h>
+// #include <emmintrin.h>
+// #include <wmmintrin.h>
+#include "sse2neon.h"
 
 #define S 100
 #define N 1000
 #ifndef NUM_PT
-#define NUM_PT 100
+#define NUM_PT 2'000'000
 #endif
 #define PRINT_EVERY 50
 
